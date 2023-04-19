@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bmi.css">
+    <title>BMI Calculator</title>
+</head>
+
+<body>
+    <div class="c1">
+        <h1 class="head1">BMI CALCULATOR</h1>
+        <div class="c2">
+            <label> Weight in KG's =</label>
+            <input type="text" id="kg2" placeholder="Weight in KG's" required><br><br>
+            <label> Height in centimetre's =</label>
+            <input type="text" id="m2" placeholder="Height in centimetre's" required><br><br>
+            <p id="result"></p><br>
+            <button type="submit" onclick="bmi()">Calculate</button><br>
+
+        </div>
+
+    </div>
+<script>
+    function bmi(){
+        var w=document.getElementById('kg2').value;
+        var h=document.getElementById('m2').value;
+        var cal=w/(h/100 * h/100);
+        var total = cal.toFixed(2)
+        if(total<18.5){
+        document.getElementById('result').innerHTML="Underweight, BMI is "+total
+        }else if(total>18.5 && total<24.9){
+            document.getElementById('result').innerHTML="Healthy, BMI is "+total
+        }else if(total>25 && total<29.9){
+            document.getElementById('result').innerHTML="Overweight, BMI is "+total
+        }
+        else{
+            document.getElementById('result').innerHTML="Obesity, BMI is "+total
+        }
+    }
+</script>
+</body>
+</html>

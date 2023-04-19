@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    }
+body{
+        background: linear-gradient(rgb(0,0,0,0),rgba(0,0,0,0)), url(./BMI.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 50vh;
+    }
+.c1{
+    text-align: center;
+    color: white;
+    /* border: 2px solid black; */
+    width: 40%;
+    border-radius: 100px;
+    padding: 0;
+    margin-top: 23%;
+    margin-right: 15%;
+    margin-left: 48%;
+    padding: 2%;
+    /* background-color: rgb(8, 8, 29); */
+    background-color: transparent;
+    background: linear-gradient(rgb(0,0,0,0.5),rgba(0,0,0,0.5))
+}
+.head1{
+    padding-bottom:20px;
+
+}
+.c2{
+    font-weight: 500;
+    font-size: 20px;
+}
+.c2 input{
+    padding: 4px;
+}
+.c2 button{
+    padding: 3px;
+    font-weight: 500;
+    font-size: 20px;
+}
+.c2 button:hover{
+    background-color: brown;
+
+}
